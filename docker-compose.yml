@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: example_user
+      POSTGRES_PASSWORD: example_password
+      POSTGRES_DB: example_db    
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"    
